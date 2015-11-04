@@ -43,7 +43,7 @@ func listStemcells(cmd *cobra.Command, args []string) {
 
 	if displayUrl {
 		// fmt.Printf("https://bosh.io/d/stemcells/bosh-aws-xen-ubuntu-trusty-go_agent?v=%v\n", v) // bosh.io has no param to request full stemcells
-		fmt.Printf("https://d26ekeud912fhb.cloudfront.net/bosh-stemcell/aws/bosh-stemcell-%v-aws-xen-ubuntu-trusty-go_agent.tgz", v)
+		fmt.Printf("https://d26ekeud912fhb.cloudfront.net/bosh-stemcell/aws/bosh-stemcell-%v-aws-xen-ubuntu-trusty-go_agent.tgz\n", v)
 	} else {
 		fmt.Printf("bosh-stemcell-%v-aws-xen-ubuntu-trusty-go_agent.tgz\n", v)
 	}
